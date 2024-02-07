@@ -1,4 +1,5 @@
 """Used to intialize the dispatcher."""
+
 # pylint: disable=raise-missing-from
 
 import importlib
@@ -23,6 +24,7 @@ _DEFAULT_DRIVERS_MAPPING = {
     "mikrotik_routeros": "nornir_nautobot.plugins.tasks.dispatcher.mikrotik_routeros.NautobotNornirDriver",
     "ruckus_smartzone_api": "nornir_nautobot.plugins.tasks.dispatcher.ruckus_smartzone_api.NautobotNornirDriver",
     "ruckus_access_point": "nornir_nautobot.plugins.tasks.dispatcher.ruckus_smartzone_api.NautobotNornirDriver",
+    "aruba_os": "nornir_nautobot.plugins.tasks.dispatcher.aruba_os.NautobotNornirDriver",
 }
 
 

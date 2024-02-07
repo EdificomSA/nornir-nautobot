@@ -1,13 +1,9 @@
 """nornir dispatcher for Aruba OS."""
 
-from nornir_nautobot.plugins.tasks.dispatcher.default import NapalmDefault, NetmikoDefault
+from .default import NetmikoNautobotNornirDriver as DefaultNautobotNornirDriver
 
 
-class NapalmArubaOs(NapalmDefault):
-    """Collection of Napalm Nornir Tasks specific to Aruba OS devices."""
-
-
-class NetmikoArubaOs(NetmikoDefault):
-    """Collection of Netmiko Nornir Tasks specific to Aruba OS devices."""
+class NautobotNornirDriver(DefaultNautobotNornirDriver):
+    """Driver for Aruba OS."""
 
     config_command = "show run"
